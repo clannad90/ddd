@@ -1,0 +1,128 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+@font-face { font-family: 'iconfont'; src: url("../faces/iconfont.eot"); src: url("../faces/iconfont.eot?#iefix") format("embedded-opentype"), url("../faces/iconfont.woff") format("woff"), url("../faces/iconfont.ttf") format("truetype"), url("../faces/iconfont.svg#iconfont") format("svg"); }
+.iconfont { font-family: "iconfont" !important; font-size: 26px; font-style: normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0.2px; -moz-osx-font-smoothing: grayscale; }
+
+.swiper-container { height: 200px; }
+.swiper-container img { width: 100%; }
+.swiper-container .swiper-pagination-bullet-active { background: white; }
+
+body, html { width: 100%; height: 100%; }
+
+ul { list-style: none; }
+
+body { padding-bottom: 50px; padding-top: 50px; }
+
+header { width: 100%; height: 50px; background: #5fccf3; position: fixed; top: 0; line-height: 50px; z-index: 999; }
+header .searcharea { width: 100%; height: 100%; display: flex; justify-content: space-around; align-items: center; }
+header .searcharea h4 { font-size: 20px; font-weight: normal; color: white; }
+header .searcharea .search { display: flex; }
+header .searcharea .search .txt { outline: none; border-bottom-left-radius: 100px; border-top-left-radius: 100px; background: rgba(255, 255, 255, 0.5); height: 30px; padding-left: 0.5rem; border: 1px solid rgba(255, 255, 255, 0); margin-right: 0.2rem; }
+header .searcharea .search i { display: inline-block; height: 30px; width: 50px; background: rgba(255, 255, 255, 0.5); position: relative; border-bottom-right-radius: 100px; border-top-right-radius: 100px; }
+header .searcharea .search i span { display: inline-block; position: absolute; left: 50%; top: -12px; transform: translate(-50%); }
+header .searcharea .share { width: 30px; height: 30px; background: rgba(255, 255, 255, 0.5); border-radius: 50%; position: relative; }
+header .searcharea .share span { display: inline-block; position: absolute; left: 50%; top: -10px; transform: translate(-50%); }
+header .searcharea .back { width: 30px; height: 30px; background: rgba(255, 255, 255, 0.5); border-radius: 50%; position: relative; }
+header .searcharea .back span { display: inline-block; position: absolute; left: 50%; top: -10px; transform: translate(-50%); }
+
+section { width: 100%; height: 100%; overflow: auto; background: #f4f4f4; }
+section .icon_list ul { display: flex; justify-content: space-between; padding: 0.3rem; padding-bottom: 0; }
+section .icon_list ul a { text-decoration: none; color: black; }
+section .icon_list ul li img { max-width: 3rem; }
+section .icon_list ul li p { font-size: 14px; text-align: center; font-weight: bold; }
+section .bannaer { width: 100%; margin-top: 1rem; }
+section .bannaer img { width: 100%; display: block; }
+section .bannaer ul { display: flex; width: 100%; height: 2.5rem; background: #1a1a1a; }
+section .bannaer ul li { display: flex; flex-direction: column; color: #b4b4b4; flex: 1; text-align: center; font-size: 16px; line-height: 1.8rem; }
+section .bannaer ul li span { font-size: 12px; line-height: 0; color: #818181; }
+section .hot { background: white; }
+section .hot ul { display: flex; }
+section .hot ul li { flex: 1; padding-top: 1rem; }
+section .hot ul li img { max-width: 2.5rem; }
+
+footer { position: fixed; bottom: 0; width: 100%; height: 50px; background: #5fccf3; }
+footer ul { display: flex; }
+footer ul a { text-decoration: none; flex: 1; }
+footer ul li { display: flex; flex: 1; justify-content: center; text-align: center; flex-direction: column; cursor: pointer; color: #fefefe; }
+footer ul li span { display: inline-block; font-size: 14px; color: #f3f3f3; flex: 1; }
+
+.pagetwo_list h3 { font-weight: normal; color: black; font-size: 18px; }
+.pagetwo_list ul { list-style: none; display: flex; width: 100%; flex-wrap: wrap; }
+.pagetwo_list ul li { padding-top: 10px; width: 100%; margin-bottom: 1rem; }
+.pagetwo_list ul li:last-child { margin-bottom: 0px; }
+.pagetwo_list ul li a { text-decoration: none; width: 100%; height: 100%; display: flex; flex-direction: column; }
+.pagetwo_list ul li a h4 { color: #6088ff; margin-left: 1rem; margin-bottom: 1rem; }
+.pagetwo_list ul li a img { width: 100%; }
+.pagetwo_list ul li a p { color: #60cdff; margin-left: 1rem; margin-right: 1rem; font-size: 14px; text-align: justify; margin-bottom: 1rem; }
+
+.shopmall { border: 1px solid #d7d7d7; width: 90%; margin: 0 auto; background: white; display: flex; height: 50%; flex-direction: column; }
+.shopmall ul { width: 100%; display: flex; flex-direction: column; }
+.shopmall ul li { width: 100%; height: 13rem; display: flex; border-bottom: 1px solid #d7d7d7; }
+.shopmall ul li:last-child { border-bottom: none; }
+.shopmall ul li .right { text-align: center; }
+.shopmall ul li .right p:first-child { font-size: 21px; margin-top: 1rem; }
+.shopmall ul li .right p:nth-of-type(2) { font-size: 14px; color: #bcbcbc; }
+.shopmall ul li .right p:nth-of-type(3) { font-size: 22px; color: #f57c3b; margin-left: 1rem; margin-bottom: 1.5rem; }
+.shopmall ul li .right a { display: inline-block; border: 1px solid #d7d7d7; width: 3.5rem; color: white; background: #f57c3b; margin-left: 1rem; height: 1.5rem; text-decoration: none; }
+.shopmall ul li div { flex: 1; }
+.shopmall ul li div img { width: auto; height: 100%; margin-left: 30%; }
+
+.pagefour_list { width: 100%; display: flex; flex-wrap: wrap; }
+.pagefour_list div { border: 1px solid rgba(0, 0, 0, 0.18); margin: 10px; border-radius: 8px; }
+.pagefour_list div h1 { font-size: 20px; color: #60cdff; border-bottom: 1px dotted rgba(0, 0, 0, 0.3); }
+.pagefour_list div p { font-size: 14px; margin-top: 0.5rem; margin-bottom: 0.5rem; color: #60cdff; }
+
+.content { margin: 20px; display: flex; flex-direction: column; border: 1px solid rgba(0, 0, 0, 0.2); }
+.content h3 { margin: 1rem; font-weight: normal; font-size: 18px; color: darkgray; }
+.content p { margin: 1rem; font-size: 14px; color: darkgray; padding-left: 10px; }
+.content h5 { margin: 1rem; text-align: center; }
+.content h5 span { display: inline-block; font-size: 20px; color: red; float: left; }
+.content h5 a { display: inline-block; background: cornflowerblue; color: white; width: 100px; height: 100%; float: right; height: 1.5rem; line-height: 1.5rem; font-size: 16px; }
+
+.box { width: 100%; height: 100%; position: relative; }
+.box .shopmall { border: 1px solid #d7d7d7; width: 90%; margin: 0 auto; background: white; display: flex; flex-direction: column; }
+.box .shopmall ul { width: 100%; display: flex; flex-direction: column; }
+.box .shopmall ul li { width: 100%; height: 13rem; display: flex; border-bottom: 1px solid #d7d7d7; }
+.box .shopmall ul li:last-child { border-bottom: none; }
+.box .shopmall ul li .right { text-align: center; }
+.box .shopmall ul li .right p:first-child { font-size: 21px; margin-top: 1rem; }
+.box .shopmall ul li .right p:nth-of-type(2) { font-size: 14px; color: #bcbcbc; }
+.box .shopmall ul li .right p:nth-of-type(3) { font-size: 22px; color: #f57c3b; margin-left: 1rem; margin-bottom: 1.5rem; }
+.box .shopmall ul li .right a { display: inline-block; border: 1px solid #d7d7d7; width: 3.5rem; color: white; background: #f57c3b; margin-left: 1rem; height: 1.5rem; text-decoration: none; }
+.box .shopmall ul li div { flex: 1; }
+.box .shopmall ul li div img { width: auto; height: 100%; margin-left: 30%; }
+.box .shaker { position: absolute; top: 0; width: 100%; height: 50%; background: rgba(0, 0, 0, 0.16); }
+.box .info { position: absolute; bottom: 0; width: 100%; height: 50%; background: white; }
+.box .info .top { width: 100%; position: relative; }
+.box .info .top .left { position: absolute; width: 6rem; height: 6rem; border: 1px solid #d4d4d4; background: white; top: -0.5rem; left: 1.5rem; border-radius: 0.6rem; }
+.box .info .top .left img { width: 1.5rem; margin-left: 50%; transform: translate(-50%); }
+.box .info .top .middle { margin-left: 8rem; }
+.box .info .top .middle p { font-size: 12px; margin-bottom: 0.5rem; color: gray; }
+.box .info .top .middle p:first-child { font-size: 22px; color: #f57c3b; }
+.box .info .top .font_info { font-size: 12px; color: gray; display: flex; justify-content: space-between; margin-top: 2rem; padding-left: 1rem; padding-right: 1rem; }
+.box .info .down ul { height: 100%; display: flex; flex-direction: column; }
+.box .info .down ul li { display: flex; flex: 1; }
+.box .info .down ul li span { font-size: 14px; color: gray; margin-right: 0.5rem; width: 5.5rem; padding-left: 1rem; }
+.box .info .down ul li input { border: none; border-bottom: 1px dotted #dedede; outline: none; padding-left: 0.5rem; }
+.box .info .down ul li b { width: 2rem; font-size: 14px; text-align: center; color: royalblue; }
+.box .info .down ul li button { width: 1.4rem; height: 1.1rem; color: white; background: #f57c3b; border: 1px solid white; outline: none; }
+.box .info .down ul li a { text-decoration: none; font-size: 14px; line-height: 1.1rem; height: 1.1rem; background: #f57c3b; color: white; width: 4rem; text-align: center; }
+.box .info .down ul li .result { width: 4.5rem; height: 1.1rem; color: #f57c3b; line-height: 1.1rem; text-align: center; }
+
+.person { width: 100%; margin-top: 0.2rem; margin-bottom: 1rem; }
+.person img { height: 5rem; border-radius: 50%; margin-left: 50%; transform: translate(-50%); }
+.person h4 { text-align: center; }
+
+.person_info ul li { border: 1px solid rgba(0, 0, 0, 0.18); border-left: none; border-right: none; background: #FFFFFF; height: 2rem; margin-bottom: 1rem; }
+.person_info ul li img { max-width: 2rem; float: left; }
+.person_info ul li span { display: inline-block; float: left; margin-top: 0.25rem; margin-left: 1rem; color: gray; }
+.person_info ul li i { display: inline-block; width: 2rem; height: 2rem; float: right; }
+.person_info ul li i img { max-width: 2rem; }
+.person_info .person_form { width: 90%; height: 25rem; margin: 0 auto; margin-top: 0.5rem; }
+.person_info .person_form ul li { border: 1px solid rgba(0, 0, 0, 0.18); height: 2rem; background: #FFFFFF; margin-bottom: 1rem; line-height: 2rem; }
+.person_info .person_form ul li:last-child { border: none; }
+.person_info .person_form ul li input { outline: none; border: none; font-size: 22px; width: 10rem; }
+.person_info .person_form ul li b { width: 4rem; display: inline-block; }
+.person_info .person_form ul li .sub { background: #5fccf3; color: white; height: 100%; width: 100%; }
+
+/*# sourceMappingURL=index.css.map */

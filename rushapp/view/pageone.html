@@ -1,0 +1,78 @@
+<div>
+	<header>
+		<div class="searcharea">
+			<div class="search">
+				<input type="text" id="txt" class="txt" placeholder="请输入要搜索的关键词..."/>
+				<i id="btn"><span class="iconfont">&#xe605;</span></i>
+			</div>
+			<div class="share"><span class="iconfont">&#xe621;</span></div>
+			<div class="back" id="back"><span class="iconfont">&#xe648;</span></div>
+		</div>
+	</header>
+	<div class="swiper-container">
+  		<div class="swiper-wrapper">
+   			<div class="swiper-slide"><img src="img/banner_list01.jpg"/></div>
+        	<div class="swiper-slide"><img src="img/banner_list02.jpg"/></div>
+        	<div class="swiper-slide"><img src="img/banner_list03.jpg"/></div>
+  		</div>
+  		<div class="swiper-pagination"></div>
+	</div>
+	<div class="icon_list">
+		<ul>
+			<a href="#!/four"><li><img src="img/icon_01.png"/><p>冲浪历史</p></li></a>
+			<a href="#!/two"><li><img src="img/icon_02.png"/><p>冲浪圣地</p></li></a>
+			<a href="#!/four"><li><img src="img/icon_03.png"/><p>冲浪器材</p></li></a>
+			<a href="#!/four"><li><img src="img/icon_04.png"/><p>冲浪须知</p></li></a>
+		</ul>
+	</div>
+	<div class="bannaer">
+		<img src="img/banner_list04.png" alt="限时秒杀" />
+		<ul>
+			<li><b>品质</b><span>quality</span></li>
+			<li><b>美观</b><span>beautiful</span></li>
+			<li><b>保障</b><span>guarantee</span></li>
+		</ul>
+	</div>
+	<div class="hot">
+		<ul>
+			<li><img src="img/hot.png"/></li>
+			<li><img src="img/ware01.png"/></li>
+			<li><img src="img/ware02.png"/></li>
+			<li><img src="img/ware04.png"/></li>
+		</ul>
+	</div>
+</div>
+<script>
+var mySwiper = new Swiper('.swiper-container',{
+		autoplay: 2000,
+		loop:true,
+		grabCursor : true,
+		autoplayDisableOnInteraction : false,
+		speed:500,
+		pagination : '.swiper-pagination',
+		paginationClickable :true
+})
+	$("#btn").click(function(){
+		$.ajax({
+			type:"get",
+			url:"index.json",
+			success:function(data){
+				var len=getlength(data.data);
+				for(var i=1;i<=len;i++){
+					var j="0"+i;
+					if(data.data[j].title.includes($("#txt").val())){
+						location.href="#!/page/"+j;
+					}
+				}
+			}
+		})
+	})
+	console.log($("#btn"))
+	function getlength(obj){
+		var count=0;
+		for(var x in obj){
+			count++;
+		}
+		return count;
+	}
+</script>

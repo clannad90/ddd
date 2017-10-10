@@ -1,0 +1,28 @@
+{
+	"data":{
+			"01":{
+				"src":"img/ware01.png",
+				"size":"203",
+				"num":"19",
+				"price":"1278",
+				"title":"海滩风情",
+				"count":"12"
+			},
+			"02":{
+				"src":"img/ware02.png",
+				"size":"213",
+				"num":"22",
+				"price":"1333",
+				"title":"激情四溢",
+				"count":"29"
+			},
+			"03":{
+				"src":"img/ware04.png",
+				"size":"234",
+				"num":"30",
+				"price":"1453",
+				"title":"热带韵味",
+				"count":"33"
+			}
+	}
+}
